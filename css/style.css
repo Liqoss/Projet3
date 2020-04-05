@@ -1,75 +1,73 @@
-body{
-    font-family: Trebuchet, Arial;
-    width: 50%;
-    margin: auto;
-    height: 1140px;
+body {
+  font-family: Trebuchet, Arial;
+  width: 50%;
+  margin: auto;
+  height: 1140px;
+  color: #e1ca5d;
 }
 
-h1{
-    text-align: center;
-    background-color: #569c84;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2em;
+.head h1 {
+  text-align: center;
+  background-color: #569c84;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+.head h1 .head__logo {
+  width: 45%;
+  padding: 17px;
 }
 
-.logo{
-    width: 45%;
-    padding: 17px;
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+.menu .menu__line {
+  display: flex;
+  justify-content: center;
+}
+.menu .menu__line a .menu__img {
+  width: 237px;
+  margin: 2em;
+  box-shadow: 1px 1px 12px grey;
+}
+.menu .menu__line a .menu__img:hover {
+  transform: scale(1.3);
+  transition-duration: 0.3s;
 }
 
-.menus{
-    display: flex;
-    flex-direction: column;
+img.menuZoom {
+  width: 90%;
+  margin-left: 5%;
+  box-shadow: 1px 1px 12px grey;
 }
 
-.ligne{
-    display: flex;
-    justify-content: center;
+.foot {
+  background-color: #569c84;
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.5em;
+  padding: 15px;
+  position: fixed;
+  bottom: 0;
+  width: 47.5%;
+  margin: auto;
+}
+.foot a {
+  color: #e1ca5d;
+  text-decoration: none;
 }
 
-a .menu{
-    width: 237px;
-    margin: 2em;
-    box-shadow: 1px 1px 12px grey;
+h2 {
+  text-align: center;
+  background-color: #569c84;
+  line-height: 2em;
+  margin: auto;
+  margin-bottom: 2em;
+  margin-top: 2em;
+  width: 30%;
+  border-radius: 10px;
+  font-size: 1.2em;
 }
 
-img.menuZoom{
-    width: 90%;
-    margin-left: 5%;
-    box-shadow: 1px 1px 12px grey;
-}
-
-
-h2{
-    text-align: center;
-    background-color: #569c84;
-    line-height: 2em;
-    margin: auto;
-    margin-bottom: 2em;
-    margin-top: 2em;
-    width: 30%;
-    border-radius: 10px;
-}
-
-footer{
-    background-color: #569c84;
-    display: flex;
-    justify-content: space-between;
-    line-height: 1.5em;
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 47.5%;
-    margin: auto;
-}
-
-h2{
-    color: #E1CA5D;
-    font-size: 1.2em;
-}
-
-footer, footer a{
-    color: #E1CA5D;
-    text-decoration: none;
-}
+/*# sourceMappingURL=style.css.map */

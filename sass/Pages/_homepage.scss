@@ -1,11 +1,23 @@
-h2{
-    text-align: center;
-    background-color: #569c84;
-    line-height: 2em;
-    margin: auto;
-    margin-bottom: 2em;
-    margin-top: 2em;
-    width: 30%;
-    border-radius: 10px;
-    font-size: 1.2em;
+@keyframes pointsAnime{
+    From{
+        opacity: 0;
+    }
+    To{
+        opacity: 1;
+    }
+}
+
+@keyframes wiggle{
+    0%{
+        transform: translate(-1px, 1px) rotate(5deg);
+    }
+    33%{
+        transform: translate(2px, -2px) rotate(-5deg);
+    }
+    66%{
+        transform: translate(-2px, 0px) rotate(5deg)
+    }
+    100%{
+        transform: translate(-2px, 2px) rotate(-5deg);
+    }
 }

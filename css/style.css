@@ -1,8 +1,8 @@
 body {
   font-family: Trebuchet, Arial;
   width: 50%;
+  height: 1040px;
   margin: auto;
-  height: 1140px;
   color: #e1ca5d;
 }
 
@@ -20,26 +20,65 @@ body {
 
 .menu {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
 }
-.menu .menu__line {
+.menu .menu__carre {
   display: flex;
   justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 333px;
+  margin: 20px;
+  box-shadow: 1px 1px 15px grey;
+  overflow: hidden;
 }
-.menu .menu__line a .menu__img {
-  width: 237px;
-  margin: 2em;
-  box-shadow: 1px 1px 12px grey;
+.menu .menu__carre a .menu__img {
+  width: 250px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
 }
-.menu .menu__line a .menu__img:hover {
+.menu .menu__carre .menu__img:hover {
   transform: scale(1.3);
-  transition-duration: 0.3s;
 }
 
 img.menuZoom {
   width: 90%;
   margin-left: 5%;
+  margin-bottom: 90px;
   box-shadow: 1px 1px 12px grey;
+}
+
+.prochainement {
+  background-color: #569c84;
+  width: 30%;
+  border-radius: 10px;
+  margin: auto;
+}
+.prochainement__title {
+  text-align: center;
+  margin-top: 1em;
+  padding-top: 0.3rem;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+.prochainement__anime {
+  display: flex;
+  justify-content: center;
+}
+.prochainement__anime--opacity {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin: 0.3rem;
+  background-color: #e1ca5d;
+  animation: pointsAnime 1s alternate infinite both;
+}
+.prochainement__anime--opacity:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.prochainement__anime--opacity:nth-child(3) {
+  animation-delay: 0.4s;
 }
 
 .foot {
@@ -57,17 +96,31 @@ img.menuZoom {
   color: #e1ca5d;
   text-decoration: none;
 }
+.foot div:hover {
+  animation: wiggle 0.2s linear 2;
+}
 
-h2 {
-  text-align: center;
-  background-color: #569c84;
-  line-height: 2em;
-  margin: auto;
-  margin-bottom: 2em;
-  margin-top: 2em;
-  width: 30%;
-  border-radius: 10px;
-  font-size: 1.2em;
+@keyframes pointsAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: translate(-1px, 1px) rotate(5deg);
+  }
+  33% {
+    transform: translate(2px, -2px) rotate(-5deg);
+  }
+  66% {
+    transform: translate(-2px, 0px) rotate(5deg);
+  }
+  100% {
+    transform: translate(-2px, 2px) rotate(-5deg);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

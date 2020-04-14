@@ -1,39 +1,63 @@
-.head h1{
+body{
+    color: $font-color;
+    min-height: 100vh;
+}
+
+header h1{
+    font-family: "logo";
+    src: url(/fonts/logo.otf);
+    font-size: 3em;
+    font-weight: bolder;
     text-align: center;
+    line-height: 2em;
     background-color: #569c84;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2em;
-    
-    & .head__logo{
-    width: 45%;
-    padding: 17px;
-    }
+    padding-bottom: 0.2em;
 }
 
 .menu{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    height: 500px;
+    overflow-y: auto;
+    margin-bottom: 3em;
 
-    & .menu__carre{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 250px;
-        height: 333px;
-        margin: 20px;
+    & a{
+        width: 300px;
+        height: 410px;
+        margin: 70px 90px 20px 90px;
         box-shadow: 1px 1px 15px grey;
-        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        text-decoration: none;
+    }
+    & a:nth-child(1){
+        background-color: #fbdcdb;
+        color: black;
+    }
+    & a:nth-child(2){
+        background-color: #fbf3fb;
+        color: #c87a21;
+    }
+    & a:nth-child(3){
+        background-color: #f3f3f3;
+        color: #347ef1;
+    }
+    & a:nth-child(4){
+        background-color: #fbfbfb;
+        color: #a0da82;
+    }
 
-        & a .menu__img{
-            width: 250px;
-            overflow: hidden;
-            transition: transform 0.5s ease-in-out;
-        }
-        & .menu__img:hover{
-            transform: scale(1.3);
-        }
+    & h2{
+        margin: 30px;
+        font-size: 1.5em;
+    }
+
+    & h3{
+        font-size: 1.5em;
+        color:"";
     }
 }
 
@@ -49,14 +73,12 @@ img.menuZoom{
     width: 30%;
     border-radius: 10px;
     margin: auto;
-
-    &__title{
-        text-align: center;
-        margin-top: 1em;
-        padding-top: 0.3rem;
-        font-size: 1.2em;
-        line-height: 1.2em;
-    }
+    margin-bottom: 2em;
+    text-align: center;
+    margin-top: 1em;
+    padding-top: 0.3rem;
+    font-size: 1.2em;
+    line-height: 1.2em;
     
     &__anime{
         display: flex;
@@ -79,23 +101,20 @@ img.menuZoom{
     }
 }
 
-.foot{
+footer{
     background-color: #569c84;
     display: flex;
     justify-content: space-between;
     line-height: 1.5em;
     padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 47.5%;
-    margin: auto;
+    margin-top: 4.1em;
 
     & a{
         color: $font-color;
         text-decoration: none;
     }
         
-    & div:hover{
+    & a:hover{
         animation: wiggle 0.2s linear 2;
     }
 }

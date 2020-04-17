@@ -1,11 +1,11 @@
 body{
     color: $font-color;
     min-height: 100vh;
+    font-family: "logo";
 }
 
 header h1{
-    font-family: "logo";
-    src: url(/fonts/logo.otf);
+    
     font-size: 3em;
     font-weight: bolder;
     text-align: center;
@@ -24,6 +24,7 @@ header h1{
 
     & a{
         width: 300px;
+        overflow: hidden;
         height: 410px;
         margin: 70px 90px 20px 90px;
         box-shadow: 1px 1px 15px grey;
@@ -32,40 +33,77 @@ header h1{
         justify-content: center;
         text-align: center;
         text-decoration: none;
+        &:hover h2, &:hover h3{
+            transform: scale(1.25);
+            transition: 0.5s ease-out;
+        }
+
     }
     & a:nth-child(1){
-        background-color: #fbdcdb;
+        background-color: $background-menu1;
         color: black;
+        & h2{
+            font-family: "titre1";
+            font-size: 1.7em;
+        }
+        & h3{
+            font-family: "menu1";
+            font-weight: bolder;
+        }
+        
     }
     & a:nth-child(2){
-        background-color: #fbf3fb;
-        color: #c87a21;
+        background-color: $background-menu2;
+        color:#c87a21;
+        & h2{
+            font-family: "titre2";
+            font-size: 1.3em;
+            background: linear-gradient(to right, #c87a21, #9d6dfe);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        & h3{
+            font-family: "menu2";
+            font-weight: bolder;
+        }
     }
     & a:nth-child(3){
-        background-color: #f3f3f3;
+        background-color: $background-menu3;
         color: #347ef1;
+        & h2{
+            font-family: "titre3";
+            font-size: 1.7em;
+            background: linear-gradient(to right, #0024de, #1390fa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        & h3{
+            font-family: "menu1";
+            font-weight: bolder;
+        }
     }
     & a:nth-child(4){
-        background-color: #fbfbfb;
+        background-color: $background-menu4;
         color: #a0da82;
+        & h2{
+            font-family: "titre4";
+            font-size: 1.6em;
+            background: linear-gradient(to right, #479d3e, #bfff80);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        & h3{
+            font-family: "menu1";
+            font-weight: bolder;
+        }
     }
-
     & h2{
-        margin: 30px;
-        font-size: 1.5em;
+        margin-bottom: 40px;
     }
 
     & h3{
-        font-size: 1.5em;
-        color:"";
+        font-size: 1.7em;
     }
-}
-
-img.menuZoom{
-    width: 90%;
-    margin-left: 5%;
-    margin-bottom: 90px;
-    box-shadow: 1px 1px 12px grey;
 }
 
 .prochainement{

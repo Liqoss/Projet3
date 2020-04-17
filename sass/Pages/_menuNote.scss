@@ -1,0 +1,43 @@
+.menu1{
+    background-color: $background-menu1;
+    padding: 60px;
+    box-shadow: 1px 1px 12px grey;
+    margin: auto;
+    margin-top: 60px;
+    color: black;
+    width: 50%;
+    height: 50.5vh;
+    overflow-y: auto;
+    font-family: "menu1";
+
+    & h2{
+        text-align: center;
+        font-weight: bolder;
+        font-size: 2em;
+        margin-bottom: 2em;
+        font-family: "titre1";
+    }
+    
+    & h3{
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: bolder;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &::before, &::after{
+            background-color: black;
+            height: 3px;
+            width: 200px;
+            content: "";
+        }
+    }
+    & ul li{
+        display: flex;
+        justify-content: space-between;
+        line-height: 2.5em;
+    }
+}

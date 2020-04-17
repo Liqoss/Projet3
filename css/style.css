@@ -1,11 +1,60 @@
+@keyframes pointsAnime {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes wiggle {
+  0% {
+    transform: translate(-1px, 1px) rotate(5deg);
+  }
+  33% {
+    transform: translate(2px, -2px) rotate(-5deg);
+  }
+  66% {
+    transform: translate(-2px, 0px) rotate(5deg);
+  }
+  100% {
+    transform: translate(-2px, 2px) rotate(-5deg);
+  }
+}
+@font-face {
+  font-family: "logo";
+  src: url(/fonts/logo-webfont.otf);
+}
+@font-face {
+  font-family: "menu1";
+  src: url(/fonts/menu1-webfont.woff), url(/fonts/menu1-webfont.woff2);
+}
+@font-face {
+  font-family: "menu2";
+  src: url(/fonts/menu2-webfont.woff), url(/fonts/menu2-webfont.woff2);
+}
+@font-face {
+  font-family: "titre1";
+  src: url(/fonts/titre1-webfont.woff), url(/fonts/titre1-webfont.woff2);
+}
+@font-face {
+  font-family: "titre2";
+  src: url(/fonts/titre2-webfont.woff), url(/fonts/titre2-webfont.woff2);
+}
+@font-face {
+  font-family: "titre3";
+  src: url(/fonts/titre3-webfont.ttf);
+}
+@font-face {
+  font-family: "titre4";
+  src: url(/fonts/titre4-webfont.woff), url(/fonts/titre4-webfont.woff2);
+}
 body {
   color: #e1ca5d;
   min-height: 100vh;
+  font-family: "logo";
 }
 
 header h1 {
-  font-family: "logo";
-  src: url(/fonts/logo.otf);
   font-size: 3em;
   font-weight: bolder;
   text-align: center;
@@ -24,6 +73,7 @@ header h1 {
 }
 .menu a {
   width: 300px;
+  overflow: hidden;
   height: 410px;
   margin: 70px 90px 20px 90px;
   box-shadow: 1px 1px 15px grey;
@@ -33,36 +83,72 @@ header h1 {
   text-align: center;
   text-decoration: none;
 }
+.menu a:hover h2, .menu a:hover h3 {
+  transform: scale(1.25);
+  transition: 0.5s ease-out;
+}
 .menu a:nth-child(1) {
   background-color: #fbdcdb;
   color: black;
+}
+.menu a:nth-child(1) h2 {
+  font-family: "titre1";
+  font-size: 1.7em;
+}
+.menu a:nth-child(1) h3 {
+  font-family: "menu1";
+  font-weight: bolder;
 }
 .menu a:nth-child(2) {
   background-color: #fbf3fb;
   color: #c87a21;
 }
+.menu a:nth-child(2) h2 {
+  font-family: "titre2";
+  font-size: 1.3em;
+  background: linear-gradient(to right, #c87a21, #9d6dfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu a:nth-child(2) h3 {
+  font-family: "menu2";
+  font-weight: bolder;
+}
 .menu a:nth-child(3) {
   background-color: #f3f3f3;
   color: #347ef1;
+}
+.menu a:nth-child(3) h2 {
+  font-family: "titre3";
+  font-size: 1.7em;
+  background: linear-gradient(to right, #0024de, #1390fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu a:nth-child(3) h3 {
+  font-family: "menu1";
+  font-weight: bolder;
 }
 .menu a:nth-child(4) {
   background-color: #fbfbfb;
   color: #a0da82;
 }
+.menu a:nth-child(4) h2 {
+  font-family: "titre4";
+  font-size: 1.6em;
+  background: linear-gradient(to right, #479d3e, #bfff80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu a:nth-child(4) h3 {
+  font-family: "menu1";
+  font-weight: bolder;
+}
 .menu h2 {
-  margin: 30px;
-  font-size: 1.5em;
+  margin-bottom: 40px;
 }
 .menu h3 {
-  font-size: 1.5em;
-  color: "";
-}
-
-img.menuZoom {
-  width: 90%;
-  margin-left: 5%;
-  margin-bottom: 90px;
-  box-shadow: 1px 1px 12px grey;
+  font-size: 1.7em;
 }
 
 .prochainement {
@@ -112,27 +198,45 @@ footer a:hover {
   animation: wiggle 0.2s linear 2;
 }
 
-@keyframes pointsAnime {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+.menu1 {
+  background-color: #fbdcdb;
+  padding: 60px;
+  box-shadow: 1px 1px 12px grey;
+  margin: auto;
+  margin-top: 60px;
+  color: black;
+  width: 50%;
+  height: 50.5vh;
+  overflow-y: auto;
+  font-family: "menu1";
 }
-@keyframes wiggle {
-  0% {
-    transform: translate(-1px, 1px) rotate(5deg);
-  }
-  33% {
-    transform: translate(2px, -2px) rotate(-5deg);
-  }
-  66% {
-    transform: translate(-2px, 0px) rotate(5deg);
-  }
-  100% {
-    transform: translate(-2px, 2px) rotate(-5deg);
-  }
+.menu1 h2 {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2em;
+  margin-bottom: 2em;
+  font-family: "titre1";
+}
+.menu1 h3 {
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: bolder;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu1 h3::before, .menu1 h3::after {
+  background-color: black;
+  height: 3px;
+  width: 200px;
+  content: "";
+}
+.menu1 ul li {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2.5em;
 }
 
 /*# sourceMappingURL=style.css.map */

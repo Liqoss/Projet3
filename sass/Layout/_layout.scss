@@ -1,11 +1,14 @@
 body{
+    max-width: 2000px;
     color: $font-color;
-    min-height: 100vh;
+    height: 100vh;
     font-family: "logo";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header h1{
-    
     font-size: 3em;
     font-weight: bolder;
     text-align: center;
@@ -16,17 +19,15 @@ header h1{
 
 .menu{
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 500px;
+    flex-direction: column;
     overflow-y: auto;
-    margin-bottom: 3em;
-
-    & a{
+    padding-bottom: 1em;
+    
+    a{
         width: 300px;
         overflow: hidden;
         height: 410px;
-        margin: 70px 90px 20px 90px;
+        margin: 40px;
         box-shadow: 1px 1px 15px grey;
         display: flex;
         flex-direction: column;
@@ -37,40 +38,58 @@ header h1{
             transform: scale(1.25);
             transition: 0.5s ease-out;
         }
-
     }
-    & a:nth-child(1){
-        background-color: $background-menu1;
-        color: black;
-        & h2{
+    h2{
+        margin-bottom: 40px;
+    }
+
+    h3{
+        font-size: 1.7em;
+    }
+}
+
+.menu__ligne1{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+    
+    a:nth-child(1){
+    background-color: $background-menu1;
+    color: $color-menu1;
+        h2{
             font-family: "titre1";
             font-size: 1.7em;
         }
-        & h3{
+        h3{
             font-family: "menu1";
             font-weight: bolder;
         }
-        
     }
-    & a:nth-child(2){
+    a:nth-child(2){
         background-color: $background-menu2;
         color:#c87a21;
-        & h2{
+        h2{
             font-family: "titre2";
             font-size: 1.3em;
             background: linear-gradient(to right, #c87a21, #9d6dfe);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        & h3{
+        h3{
             font-family: "menu2";
             font-weight: bolder;
         }
     }
-    & a:nth-child(3){
+}
+
+.menu__ligne2{
+    display: flex;
+    justify-content: center;
+    
+    a:nth-child(1){
         background-color: $background-menu3;
         color: #347ef1;
-        & h2{
+        h2{
             font-family: "titre3";
             font-size: 1.7em;
             background: linear-gradient(to right, #0024de, #1390fa);
@@ -79,45 +98,36 @@ header h1{
         }
         & h3{
             font-family: "menu1";
-            font-weight: bolder;
         }
     }
-    & a:nth-child(4){
+    a:nth-child(2){
         background-color: $background-menu4;
         color: #a0da82;
-        & h2{
+        h2{
             font-family: "titre4";
             font-size: 1.6em;
             background: linear-gradient(to right, #479d3e, #bfff80);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        & h3{
+        h3{
             font-family: "menu1";
-            font-weight: bolder;
         }
     }
-    & h2{
-        margin-bottom: 40px;
-    }
-
-    & h3{
-        font-size: 1.7em;
-    }
 }
-
+    
 .prochainement{
     background-color: $background-color;
     width: 30%;
     border-radius: 10px;
     margin: auto;
-    margin-bottom: 2em;
-    text-align: center;
     margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
     padding-top: 0.3rem;
     font-size: 1.2em;
     line-height: 1.2em;
-    
+
     &__anime{
         display: flex;
         justify-content: center;
@@ -139,13 +149,14 @@ header h1{
     }
 }
 
+
+
 footer{
     background-color: #569c84;
     display: flex;
     justify-content: space-between;
     line-height: 1.5em;
     padding: 15px;
-    margin-top: 4.1em;
 
     & a{
         color: $font-color;
@@ -154,5 +165,28 @@ footer{
         
     & a:hover{
         animation: wiggle 0.2s linear 2;
+    }
+}
+
+.body-menuZoom{
+    padding-bottom: 110px;
+    padding-top: 110px;
+    height: auto;
+}
+
+.header-menuZoom{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.footer-menuZoom{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 15px 0;
+
+    a{
+        margin: 0 15px;
     }
 }

@@ -5,14 +5,18 @@
 
 @font-face{
     font-family: "menu1";
-    src: url(/fonts/menu1-webfont.woff),
-         url(/fonts/menu1-webfont.woff2);
+    src: url(/fonts/menu1.ttf);
 }
 
 @font-face{
     font-family: "menu2";
     src: url(/fonts/menu2-webfont.woff),
          url(/fonts/menu2-webfont.woff2);
+}
+
+@font-face{
+    font-family: "menu2-2";
+    src: url(/fonts/menu2-2.ttf);
 }
 
 @font-face{
@@ -37,3 +41,4 @@
     src: url(/fonts/titre4-webfont.woff),
          url(/fonts/titre4-webfont.woff2);
 }
+

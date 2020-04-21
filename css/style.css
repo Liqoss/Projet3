@@ -26,11 +26,15 @@
 }
 @font-face {
   font-family: "menu1";
-  src: url(/fonts/menu1-webfont.woff), url(/fonts/menu1-webfont.woff2);
+  src: url(/fonts/menu1.ttf);
 }
 @font-face {
   font-family: "menu2";
   src: url(/fonts/menu2-webfont.woff), url(/fonts/menu2-webfont.woff2);
+}
+@font-face {
+  font-family: "menu2-2";
+  src: url(/fonts/menu2-2.ttf);
 }
 @font-face {
   font-family: "titre1";
@@ -49,9 +53,13 @@
   src: url(/fonts/titre4-webfont.woff), url(/fonts/titre4-webfont.woff2);
 }
 body {
+  max-width: 2000px;
   color: #e1ca5d;
-  min-height: 100vh;
+  height: 100vh;
   font-family: "logo";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header h1 {
@@ -65,17 +73,15 @@ header h1 {
 
 .menu {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 500px;
+  flex-direction: column;
   overflow-y: auto;
-  margin-bottom: 3em;
+  padding-bottom: 1em;
 }
 .menu a {
   width: 300px;
   overflow: hidden;
   height: 410px;
-  margin: 70px 90px 20px 90px;
+  margin: 40px;
   box-shadow: 1px 1px 15px grey;
   display: flex;
   flex-direction: column;
@@ -87,63 +93,6 @@ header h1 {
   transform: scale(1.25);
   transition: 0.5s ease-out;
 }
-.menu a:nth-child(1) {
-  background-color: #fbdcdb;
-  color: black;
-}
-.menu a:nth-child(1) h2 {
-  font-family: "titre1";
-  font-size: 1.7em;
-}
-.menu a:nth-child(1) h3 {
-  font-family: "menu1";
-  font-weight: bolder;
-}
-.menu a:nth-child(2) {
-  background-color: #fbf3fb;
-  color: #c87a21;
-}
-.menu a:nth-child(2) h2 {
-  font-family: "titre2";
-  font-size: 1.3em;
-  background: linear-gradient(to right, #c87a21, #9d6dfe);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.menu a:nth-child(2) h3 {
-  font-family: "menu2";
-  font-weight: bolder;
-}
-.menu a:nth-child(3) {
-  background-color: #f3f3f3;
-  color: #347ef1;
-}
-.menu a:nth-child(3) h2 {
-  font-family: "titre3";
-  font-size: 1.7em;
-  background: linear-gradient(to right, #0024de, #1390fa);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.menu a:nth-child(3) h3 {
-  font-family: "menu1";
-  font-weight: bolder;
-}
-.menu a:nth-child(4) {
-  background-color: #fbfbfb;
-  color: #a0da82;
-}
-.menu a:nth-child(4) h2 {
-  font-family: "titre4";
-  font-size: 1.6em;
-  background: linear-gradient(to right, #479d3e, #bfff80);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.menu a:nth-child(4) h3 {
-  font-family: "menu1";
-  font-weight: bolder;
-}
 .menu h2 {
   margin-bottom: 40px;
 }
@@ -151,14 +100,80 @@ header h1 {
   font-size: 1.7em;
 }
 
+.menu__ligne1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+.menu__ligne1 a:nth-child(1) {
+  background-color: #fbdcdb;
+  color: #432312;
+}
+.menu__ligne1 a:nth-child(1) h2 {
+  font-family: "titre1";
+  font-size: 1.7em;
+}
+.menu__ligne1 a:nth-child(1) h3 {
+  font-family: "menu1";
+  font-weight: bolder;
+}
+.menu__ligne1 a:nth-child(2) {
+  background-color: #fbf3fb;
+  color: #c87a21;
+}
+.menu__ligne1 a:nth-child(2) h2 {
+  font-family: "titre2";
+  font-size: 1.3em;
+  background: linear-gradient(to right, #c87a21, #9d6dfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__ligne1 a:nth-child(2) h3 {
+  font-family: "menu2";
+  font-weight: bolder;
+}
+
+.menu__ligne2 {
+  display: flex;
+  justify-content: center;
+}
+.menu__ligne2 a:nth-child(1) {
+  background-color: #f3f3f3;
+  color: #347ef1;
+}
+.menu__ligne2 a:nth-child(1) h2 {
+  font-family: "titre3";
+  font-size: 1.7em;
+  background: linear-gradient(to right, #0024de, #1390fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__ligne2 a:nth-child(1) h3 {
+  font-family: "menu1";
+}
+.menu__ligne2 a:nth-child(2) {
+  background-color: #fbfbfb;
+  color: #a0da82;
+}
+.menu__ligne2 a:nth-child(2) h2 {
+  font-family: "titre4";
+  font-size: 1.6em;
+  background: linear-gradient(to right, #479d3e, #bfff80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu__ligne2 a:nth-child(2) h3 {
+  font-family: "menu1";
+}
+
 .prochainement {
   background-color: #569c84;
   width: 30%;
   border-radius: 10px;
   margin: auto;
-  margin-bottom: 2em;
-  text-align: center;
   margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
   padding-top: 0.3rem;
   font-size: 1.2em;
   line-height: 1.2em;
@@ -188,7 +203,6 @@ footer {
   justify-content: space-between;
   line-height: 1.5em;
   padding: 15px;
-  margin-top: 4.1em;
 }
 footer a {
   color: #e1ca5d;
@@ -198,16 +212,36 @@ footer a:hover {
   animation: wiggle 0.2s linear 2;
 }
 
+.body-menuZoom {
+  padding-bottom: 110px;
+  padding-top: 110px;
+  height: auto;
+}
+
+.header-menuZoom {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.footer-menuZoom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 0;
+}
+.footer-menuZoom a {
+  margin: 0 15px;
+}
+
 .menu1 {
   background-color: #fbdcdb;
   padding: 60px;
   box-shadow: 1px 1px 12px grey;
   margin: auto;
   margin-top: 60px;
-  color: black;
-  width: 50%;
-  height: 50.5vh;
-  overflow-y: auto;
+  color: #432312;
+  width: 40%;
   font-family: "menu1";
 }
 .menu1 h2 {
@@ -216,27 +250,136 @@ footer a:hover {
   font-size: 2em;
   margin-bottom: 2em;
   font-family: "titre1";
+  font-weight: lighter;
+}
+.menu1 h2:nth-of-type(2) {
+  margin-top: 2em;
+  font-size: 1.5em;
+  margin-bottom: 0;
 }
 .menu1 h3 {
   font-size: 1.5em;
   text-align: center;
   font-weight: bolder;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.menu1 h3 span {
+  background: linear-gradient(to top, #432312 0px, #432312 1px, transparent 2px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s ease;
+}
 .menu1 h3::before, .menu1 h3::after {
-  background-color: black;
+  background-color: #432312;
   height: 3px;
-  width: 200px;
+  width: 30%;
   content: "";
+}
+.menu1 h3:hover > span {
+  background-size: 100% 100%;
 }
 .menu1 ul li {
   display: flex;
   justify-content: space-between;
   line-height: 2.5em;
+  font-size: 0.8em;
+}
+
+.menu2 {
+  background-color: #fbf3fb;
+  width: 40%;
+  margin: auto;
+  padding: 100px 40px 100px 40px;
+  box-shadow: 1px 1px 12px grey;
+  margin-top: 60px;
+  font-family: "menu2-2";
+}
+.menu2 h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 3em;
+  font-family: "titre2";
+  background: linear-gradient(to right, #c87a21, #9d6dfe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu2 h2:nth-of-type(2) {
+  margin-top: 2em;
+  font-size: 1.5em;
+  margin-bottom: 0;
+}
+.menu2 h3 {
+  font-size: 1.15em;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu2 h3::before, .menu2 h3::after {
+  background-color: #c7750a;
+  height: 3px;
+  width: 28%;
+  content: "";
+}
+.menu2 h3 span {
+  background: linear-gradient(to top, #c7750a 0px, #c7750a 1px, transparent 2px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s ease;
+}
+.menu2 h3:hover > span {
+  background-size: 100% 100%;
+}
+.menu2 h3:nth-of-type(2)::before, .menu2 h3:nth-of-type(2)::after {
+  background-color: #a6679a;
+  height: 3px;
+  width: 28%;
+  content: "";
+}
+.menu2 h3:nth-of-type(2) span {
+  background: linear-gradient(to top, #a6679a 0px, #a6679a 1px, transparent 2px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s ease;
+}
+.menu2 h3:nth-of-type(2):hover > span {
+  background-size: 100% 100%;
+}
+.menu2 h3:nth-of-type(3)::before, .menu2 h3:nth-of-type(3)::after {
+  background-color: #6e4bcd;
+  height: 3px;
+  width: 28%;
+  content: "";
+}
+.menu2 h3:nth-of-type(3) span {
+  background: linear-gradient(to top, #6e4bcd 0px, #6e4bcd 1px, transparent 2px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s ease;
+}
+.menu2 h3:nth-of-type(3):hover > span {
+  background-size: 100% 100%;
+}
+.menu2 ul li {
+  display: flex;
+  justify-content: space-between;
+  line-height: 2.5em;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.menu2 h3:nth-of-type(1), .menu2 ul:nth-of-type(1) {
+  color: #c7750a;
+}
+
+.menu2 h3:nth-of-type(2), .menu2 ul:nth-of-type(2) {
+  color: #a6679a;
+}
+
+.menu2 h3:nth-of-type(3), .menu2 ul:nth-of-type(3) {
+  color: #6e4bcd;
 }
 
 /*# sourceMappingURL=style.css.map */

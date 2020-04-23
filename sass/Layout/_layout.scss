@@ -1,7 +1,5 @@
 body{
-    max-width: 2000px;
     color: $font-color;
-    height: 100vh;
     font-family: "logo";
     display: flex;
     flex-direction: column;
@@ -71,7 +69,7 @@ header h1{
         h2{
             font-family: "titre2";
             font-size: 1.3em;
-            background: linear-gradient(to right, #c87a21, #9d6dfe);
+            background: linear-gradient(to right, $color-menu2-1, $color-menu2-3);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -92,7 +90,7 @@ header h1{
         h2{
             font-family: "titre3";
             font-size: 1.7em;
-            background: linear-gradient(to right, #0024de, #1390fa);
+            background: linear-gradient(to right, $color-menu3-1, $color-menu3-3);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -106,7 +104,7 @@ header h1{
         h2{
             font-family: "titre4";
             font-size: 1.6em;
-            background: linear-gradient(to right, #479d3e, #bfff80);
+            background: linear-gradient(to right, $color-menu4-1, $color-menu4-2);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }

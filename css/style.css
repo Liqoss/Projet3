@@ -53,9 +53,7 @@
   src: url(/fonts/titre4-webfont.woff), url(/fonts/titre4-webfont.woff2);
 }
 body {
-  max-width: 2000px;
   color: #e1ca5d;
-  height: 100vh;
   font-family: "logo";
   display: flex;
   flex-direction: column;
@@ -124,7 +122,7 @@ header h1 {
 .menu__ligne1 a:nth-child(2) h2 {
   font-family: "titre2";
   font-size: 1.3em;
-  background: linear-gradient(to right, #c87a21, #9d6dfe);
+  background: linear-gradient(to right, #c7750a, #6e4bcd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -144,7 +142,7 @@ header h1 {
 .menu__ligne2 a:nth-child(1) h2 {
   font-family: "titre3";
   font-size: 1.7em;
-  background: linear-gradient(to right, #0024de, #1390fa);
+  background: linear-gradient(to right, #0024de, #1c9ef9);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -158,7 +156,7 @@ header h1 {
 .menu__ligne2 a:nth-child(2) h2 {
   font-family: "titre4";
   font-size: 1.6em;
-  background: linear-gradient(to right, #479d3e, #bfff80);
+  background: linear-gradient(to right, #3c9337, #bfff80);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -242,15 +240,14 @@ footer a:hover {
   margin-top: 60px;
   color: #432312;
   width: 40%;
+  max-width: 570px;
   font-family: "menu1";
 }
 .menu1 h2 {
   text-align: center;
-  font-weight: bolder;
   font-size: 2em;
   margin-bottom: 2em;
   font-family: "titre1";
-  font-weight: lighter;
 }
 .menu1 h2:nth-of-type(2) {
   margin-top: 2em;
@@ -291,6 +288,7 @@ footer a:hover {
 .menu2 {
   background-color: #fbf3fb;
   width: 40%;
+  max-width: 570px;
   margin: auto;
   padding: 100px 40px 100px 40px;
   box-shadow: 1px 1px 12px grey;
@@ -313,6 +311,7 @@ footer a:hover {
 }
 .menu2 h3 {
   font-size: 1.15em;
+  font-weight: bolder;
   text-align: center;
   margin-top: 40px;
   margin-bottom: 30px;
@@ -380,6 +379,179 @@ footer a:hover {
 
 .menu2 h3:nth-of-type(3), .menu2 ul:nth-of-type(3) {
   color: #6e4bcd;
+}
+
+.menu3 {
+  background-color: #eef0f0;
+  padding: 60px;
+  padding-bottom: 100px;
+  box-shadow: 1px 1px 12px grey;
+  margin: auto;
+  margin-top: 60px;
+  color: black;
+  width: 40%;
+  max-width: 570px;
+  font-family: "menu1";
+  font-weight: 500;
+}
+.menu3 h2 {
+  text-align: center;
+  font-size: 3.5em;
+  background: linear-gradient(to right, #0024de, #1390fa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  font-family: "titre3";
+}
+.menu3 h3 {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu3 h3::before, .menu3 h3::after {
+  background-color: #0024de;
+  height: 3px;
+  width: 28%;
+  content: "";
+}
+.menu3 h3 span {
+  background: linear-gradient(to top, black 0px, black 1px, transparent 2px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s ease;
+}
+.menu3 h3:hover > span {
+  background-size: 100% 100%;
+}
+.menu3 h3:nth-of-type(2)::before, .menu3 h3:nth-of-type(2)::after {
+  background-color: #0171f3;
+  height: 3px;
+  width: 28%;
+  content: "";
+}
+.menu3 h3:nth-of-type(2) span {
+  background: linear-gradient(to top, black 0px, black 1px, transparent 2px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s ease;
+}
+.menu3 h3:nth-of-type(2):hover > span {
+  background-size: 100% 100%;
+}
+.menu3 h3:nth-of-type(3)::before, .menu3 h3:nth-of-type(3)::after {
+  background-color: #1c9ef9;
+  height: 3px;
+  width: 28%;
+  content: "";
+}
+.menu3 h3:nth-of-type(3) span {
+  background: linear-gradient(to top, black 0px, black 1px, transparent 2px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s ease;
+}
+.menu3 h3:nth-of-type(3):hover > span {
+  background-size: 100% 100%;
+}
+.menu3 ul li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+  line-height: 2.5em;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.menu3 ul li span {
+  font-size: 1.5em;
+}
+
+.menu4 {
+  background-color: #fbfbfb;
+  padding: 60px;
+  padding-bottom: 100px;
+  box-shadow: 1px 1px 12px grey;
+  margin: auto;
+  margin-top: 60px;
+  color: black;
+  width: 40%;
+  max-width: 570px;
+  font-family: "menu1";
+  font-weight: 500;
+}
+.menu4 h2 {
+  text-align: center;
+  font-size: 3.5em;
+  line-height: 1.5em;
+  background: linear-gradient(to right, #3c9337, #bfff80);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: "titre4";
+}
+.menu4 h3 {
+  font-size: 1em;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu4 h3::before, .menu4 h3::after {
+  background: linear-gradient(to right, #3c9337, #bfff80);
+  height: 3px;
+  width: 28%;
+  content: "";
+}
+.menu4 h3 span {
+  background: linear-gradient(to top, black 0px, black 1px, transparent 2px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s ease;
+}
+.menu4 h3:hover > span {
+  background-size: 100% 100%;
+}
+.menu4 h3:nth-of-type(2)::before, .menu4 h3:nth-of-type(2)::after {
+  background: linear-gradient(to right, #3c9337, #bfff80);
+  height: 3px;
+  width: 28%;
+  content: "";
+}
+.menu4 h3:nth-of-type(2) span {
+  background: linear-gradient(to top, black 0px, black 1px, transparent 2px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s ease;
+}
+.menu4 h3:nth-of-type(2):hover > span {
+  background-size: 100% 100%;
+}
+.menu4 h3:nth-of-type(3)::before, .menu4 h3:nth-of-type(3)::after {
+  background: linear-gradient(to right, #3c9337, #bfff80);
+  height: 3px;
+  width: 28%;
+  content: "";
+}
+.menu4 h3:nth-of-type(3) span {
+  background: linear-gradient(to top, black 0px, black 1px, transparent 2px) no-repeat;
+  background-size: 0 100%;
+  transition: background-size 0.5s ease;
+}
+.menu4 h3:nth-of-type(3):hover > span {
+  background-size: 100% 100%;
+}
+.menu4 ul li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8em;
+  line-height: 2.5em;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.menu4 ul li span {
+  font-size: 1.3em;
 }
 
 /*# sourceMappingURL=style.css.map */

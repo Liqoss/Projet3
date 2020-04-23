@@ -1,32 +1,31 @@
-.menu2{
-    background-color: $background-menu2;
+.menu4{
+    background-color: $background-menu4;
+    padding: 60px;
+    padding-bottom: 100px;
+    box-shadow: 1px 1px 12px grey;
+    margin: auto;
+    margin-top: 60px;
+    color: black;
     width: 40%;
     max-width: 570px;
-    margin: auto;
-    padding: 100px 40px 100px 40px;
-    box-shadow: 1px 1px 12px grey;
-    margin-top: 60px;
-    font-family: "menu2-2";
+    font-family: "menu1";
+    font-weight: 500;
+    
 
     h2{
         text-align: center;
-        font-size: 2em;
-        margin-bottom: 3em;
-        font-family: "titre2";
-        background: linear-gradient(to right, #c87a21, #9d6dfe);
+        font-size: 3.5em;
+        line-height: 1.5em;
+        background: linear-gradient(to right, $color-menu4-1, $color-menu4-2);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-
-        &:nth-of-type(2){
-            margin-top: 2em;
-            font-size: 1.5em;
-            margin-bottom: 0;
-        }
+        margin-top: 1em;
+        margin-bottom: 1em;
+        font-family: "titre4";
     }
     
     h3{
-        font-size: 1.15em;
-        font-weight: bolder;
+        font-size: 1em;
         text-align: center;
         margin-top: 40px;
         margin-bottom: 30px;
@@ -35,14 +34,14 @@
         align-items: center;
 
         &::before, &::after{
-            background-color: $color-menu2-1;
+            background: linear-gradient(to right, $color-menu4-1, $color-menu4-2);
             height: 3px;
             width: 28%;
             content: "";
         }
         
         span{
-            background: linear-gradient(to top, $color-menu2-1 0px , $color-menu2-1 1px, transparent 2px) no-repeat;
+            background: linear-gradient(to top, black 0px , black 1px, transparent 2px) no-repeat;
             background-size: 0 100%;
             transition: background-size 0.5s ease;
         }
@@ -52,13 +51,13 @@
 
     &:nth-of-type(2){
         &::before, &::after{
-            background-color: $color-menu2-2;
+            background: linear-gradient(to right, $color-menu4-1, $color-menu4-2);
             height: 3px;
             width: 28%;
             content: "";
         }
         span{
-            background: linear-gradient(to top, $color-menu2-2 0px , $color-menu2-2 1px, transparent 2px) no-repeat;
+            background: linear-gradient(to top, black 0px , black 1px, transparent 2px) no-repeat;
             background-size: 0 100%;
             transition: background-size 0.5s ease;
         }
@@ -68,13 +67,13 @@
     }
     &:nth-of-type(3){
         &::before, &::after{
-            background-color: $color-menu2-3;
+            background: linear-gradient(to right, $color-menu4-1, $color-menu4-2);
             height: 3px;
             width: 28%;
             content: "";
         }
         span{
-            background: linear-gradient(to top, $color-menu2-3 0px , $color-menu2-3 1px, transparent 2px) no-repeat;
+            background: linear-gradient(to top, black 0px , black 1px, transparent 2px) no-repeat;
             background-size: 0 100%;
             transition: background-size 0.5s ease;
         }
@@ -87,20 +86,13 @@
     & ul li{
         display: flex;
         justify-content: space-between;
+        font-size: 0.8em;
         line-height: 2.5em;
         padding-left: 40px;
         padding-right: 40px;
+
+        span{
+            font-size: 1.3em;
+        }
     }
-}
-
-.menu2 h3:nth-of-type(1), .menu2 ul:nth-of-type(1){
-    color: $color-menu2-1;
-}
-
-.menu2 h3:nth-of-type(2), .menu2 ul:nth-of-type(2){
-    color: $color-menu2-2;
-}
-
-.menu2 h3:nth-of-type(3), .menu2 ul:nth-of-type(3){
-    color: $color-menu2-3;
 }

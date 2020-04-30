@@ -2,39 +2,32 @@
     background-color: $background-menu4;
     padding: 60px;
     padding-bottom: 100px;
-    box-shadow: 1px 1px 12px grey;
-    margin: auto;
-    margin-top: 60px;
     color: black;
-    width: 40%;
-    max-width: 570px;
     font-family: "menu1";
     font-weight: 500;
     
 
     h2{
-        text-align: center;
         font-size: 3.5em;
         line-height: 1.5em;
         background: linear-gradient(to right, $color-menu4-1, $color-menu4-2);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         margin-top: 1em;
-        margin-bottom: 1em;
         font-family: "titre4";
     }
     
     h3{
         font-size: 1em;
-        text-align: center;
-        margin-top: 40px;
-        margin-bottom: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
 
-        &::before, &::after{
+        &::before{
             background: linear-gradient(to right, $color-menu4-1, $color-menu4-2);
+            height: 3px;
+            width: 28%;
+            content: "";
+        }
+        &::after{
+            background: linear-gradient(to right, $color-menu4-2, $color-menu4-1);
             height: 3px;
             width: 28%;
             content: "";
@@ -45,13 +38,16 @@
             background-size: 0 100%;
             transition: background-size 0.5s ease;
         }
-        &:hover > span{
-                background-size: 100% 100%;
-            }
 
     &:nth-of-type(2){
-        &::before, &::after{
+        &::before{
             background: linear-gradient(to right, $color-menu4-1, $color-menu4-2);
+            height: 3px;
+            width: 28%;
+            content: "";
+        }
+        &::after{
+            background: linear-gradient(to right, $color-menu4-2, $color-menu4-1);
             height: 3px;
             width: 28%;
             content: "";
@@ -66,8 +62,14 @@
         }
     }
     &:nth-of-type(3){
-        &::before, &::after{
+        &::before{
             background: linear-gradient(to right, $color-menu4-1, $color-menu4-2);
+            height: 3px;
+            width: 28%;
+            content: "";
+        }
+        &::after{
+            background: linear-gradient(to right, $color-menu4-2, $color-menu4-1);
             height: 3px;
             width: 28%;
             content: "";
@@ -84,10 +86,6 @@
 }
 
     & ul li{
-        display: flex;
-        justify-content: space-between;
-        font-size: 0.8em;
-        line-height: 2.5em;
         padding-left: 40px;
         padding-right: 40px;
 

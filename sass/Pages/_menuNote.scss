@@ -1,18 +1,9 @@
 .menu1{
     background-color: $background-menu1;
-    padding: 60px;
-    box-shadow: 1px 1px 12px grey;
-    margin: auto;
-    margin-top: 60px;
     color: $color-menu1;
-    width: 40%;
-    max-width: 570px;
     font-family: "menu1";
 
     h2{
-        text-align: center;
-        font-size: 2em;
-        margin-bottom: 2em;
         font-family: "titre1";
 
         &:nth-of-type(2){
@@ -20,17 +11,15 @@
             font-size: 1.5em;
             margin-bottom: 0;
         }
+        i{
+            background: linear-gradient(to right, $color-logo1, $color-logo2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
     }
     
     h3{
         font-size: 1.5em;
-        text-align: center;
-        font-weight: bolder;
-        margin-top: 40px;
-        margin-bottom: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
 
         span{
             background: linear-gradient(to top, $color-menu1 0px , $color-menu1 1px, transparent 2px) no-repeat;
@@ -44,14 +33,5 @@
             width:  30%;
             content: "";
         }
-        &:hover > span{
-            background-size: 100% 100%;
-        }
-    }
-    & ul li{
-        display: flex;
-        justify-content: space-between;
-        line-height: 2.5em;
-        font-size: 0.8em;
     }
 }

@@ -1,0 +1,27 @@
+.menu__ligne1, .menu__ligne2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__ligne1 a, .menu__ligne2 a{
+    width: 200px;
+    height: 270px;
+}
+
+.menu__ligne1 a:nth-child(1) h2, .menu__ligne1 a:nth-child(1) h3, .menu__ligne2 a:nth-child(1) h2, .menu__ligne2 a:nth-child(1) h3, .menu__ligne2 a:nth-child(2) h2, .menu__ligne2 a:nth-child(2) h3{
+    font-size: 1.3em;
+}
+
+.menu__ligne1 a:nth-child(2) h2{
+    font-size: 1em;
+}
+
+.menu__ligne1 a:nth-child(2) h3{
+    font-size: 1.2em;
+}
+
+.prochainement{
+    width: 200px;
+}

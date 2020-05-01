@@ -185,12 +185,13 @@ footer{
 }
 
 .menuStyle{
-    padding: 60px;
+    padding: 80px 60px 120px 60px;
     box-shadow: 1px 1px 12px grey;
     margin: auto;
     margin-top: 60px;
     width: 40%;
-    max-width: 570px;
+    min-width: 583px;
+    max-width: 583px;
 
     h2{
         text-align: center;

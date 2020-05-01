@@ -229,12 +229,13 @@ footer a:hover {
 }
 
 .menuStyle {
-  padding: 60px;
+  padding: 80px 60px 120px 60px;
   box-shadow: 1px 1px 12px grey;
   margin: auto;
   margin-top: 60px;
   width: 40%;
-  max-width: 570px;
+  min-width: 583px;
+  max-width: 583px;
 }
 .menuStyle h2 {
   text-align: center;
@@ -274,6 +275,7 @@ footer a:hover {
   background-color: #fbdcdb;
   color: #432312;
   font-family: "menu1";
+  padding: 60px;
 }
 .menu1 h2 {
   font-family: "titre1";
@@ -312,6 +314,8 @@ footer a:hover {
   background: linear-gradient(to right, #c87a21, #9d6dfe);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-top: 30px;
+  margin-bottom: 90px;
 }
 .menu2 h3 {
   font-size: 1.15em;

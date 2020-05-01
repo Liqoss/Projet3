@@ -25,3 +25,26 @@
 .prochainement{
     width: 200px;
 }
+
+.body-menuZoom{
+    padding-bottom: inherit;
+    padding-top: inherit;
+}
+
+.header-menuZoom{
+    position: inherit;
+}
+
+.menuStyle{
+    width: 100%;
+    font-size: 50%;
+    min-width: 320px;
+    max-width: 499px;
+    padding: 60px 0px 100px;
+    margin-top: inherit;
+}
+
+.menu4 ul li span{
+    display: flex;
+    align-items: center;
+}

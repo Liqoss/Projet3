@@ -22,35 +22,35 @@
 }
 @font-face {
   font-family: "logo";
-  src: url(/fonts/logo-webfont.otf);
+  src: url(../fonts/logo-webfont.otf);
 }
 @font-face {
   font-family: "menu1";
-  src: url(/fonts/menu1.ttf);
+  src: url(../fonts/menu1.ttf);
 }
 @font-face {
   font-family: "menu2";
-  src: url(/fonts/menu2-webfont.woff), url(/fonts/menu2-webfont.woff2);
+  src: url(../fonts/menu2-webfont.woff), url(../fonts/menu2-webfont.woff2);
 }
 @font-face {
   font-family: "menu2-2";
-  src: url(/fonts/menu2-2.ttf);
+  src: url(../fonts/menu2-2.ttf);
 }
 @font-face {
   font-family: "titre1";
-  src: url(/fonts/titre1-webfont.woff), url(/fonts/titre1-webfont.woff2);
+  src: url(../fonts/titre1-webfont.woff), url(../fonts/titre1-webfont.woff2);
 }
 @font-face {
   font-family: "titre2";
-  src: url(/fonts/titre2-webfont.woff), url(/fonts/titre2-webfont.woff2);
+  src: url(../fonts/titre2-webfont.woff), url(../fonts/titre2-webfont.woff2);
 }
 @font-face {
   font-family: "titre3";
-  src: url(/fonts/titre3-webfont.ttf);
+  src: url(../fonts/titre3-webfont.ttf);
 }
 @font-face {
   font-family: "titre4";
-  src: url(/fonts/titre4-webfont.woff), url(/fonts/titre4-webfont.woff2);
+  src: url(../fonts/titre4-webfont.woff), url(../fonts/titre4-webfont.woff2);
 }
 body {
   color: #e1ca5d;

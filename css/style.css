@@ -69,6 +69,10 @@ header h1 {
   background-color: #569c84;
   padding-bottom: 0.2em;
 }
+header h1 a {
+  text-decoration: none;
+  color: #e1ca5d;
+}
 
 .menu {
   display: flex;

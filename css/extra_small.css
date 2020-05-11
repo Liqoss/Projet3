@@ -37,19 +37,23 @@
 
 .menuStyle{
     width: 100%;
-    height: 70vh;
-    font-size: 50%;
+    height: 110vh;
+    font-size: 70%;
     min-width: 320px;
     max-width: 499px;
     padding: 60px 0px 100px;
     margin-top: inherit;
 }
+
+.menuStyle ul li{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 5px;
+    padding-left: inherit;
+    padding-right: inherit;
+}
     
 .menu1 li{
     padding: 0px 5px 0px 5px;
-}
-
-.menu4 ul li span{
-    display: flex;
-    align-items: center;
 }
